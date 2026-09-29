@@ -1,11 +1,19 @@
-
+import java.util.Scanner;
 
 public class principal {
 
     public static void main(String[] args) {
-        for (int oi=1;oi<7;oi++) {
-            System.out.println("Aluno disse: " + oi);
+        {
+            Scanner leitor = new
+                    Scanner(System.in);
+            
+            System.out.println("Digite a frase: ");
+            String frase = leitor.nextLine();
+            
+            for (int i = 1; i < 7; i++) {
+                System.out.println("Frase " + frase);
+            }
         }
-       
+
     }
 }
